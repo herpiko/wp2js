@@ -1,0 +1,30 @@
+{
+  "name": "wp2js",
+  "version": "0.1.0",
+  "description": "Parse the xml file exported in wordpress to a readable javascript object. The properties of the object can be filtered.",
+  "homepage": "https://github.com/Alex1990/wp2js",
+  "author": {
+    "name": "Alex Chao",
+    "email": "alexchao1990@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Alex1990/wp2js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alex1990/wp2js/issues/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Alex1990/wp2js/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "async": "~0.9.0",
+    "xml2js": "~0.4.4",
+  },
+  "keywords": [
+    "wordpress"
+  ]
+}
