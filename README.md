@@ -223,6 +223,10 @@ If you come cross a bug or other problems, you can submit an issue in here: [htt
 Release History
 ---------------
 
+**2014-10-26** `0.1.1`
+
+Fix a type error.
+
 **2014-10-26** `0.1.0`
 
 First version.
