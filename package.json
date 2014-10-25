@@ -1,6 +1,6 @@
 {
   "name": "wp2js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse the xml file exported in wordpress to a readable javascript object. The properties of the object can be filtered.",
   "homepage": "https://github.com/Alex1990/wp2js",
   "author": {
