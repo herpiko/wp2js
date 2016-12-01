@@ -3,6 +3,7 @@ var xml2js = require('xml2js');
 var async = require('async');
 
 var wp2js = module.exports = {};
+var posts = [];
 
 // Check if an object is a plain object, rather than an array.
 function isPlainObject(o) {
@@ -234,7 +235,7 @@ wp2js.parse = function(opts, callback){
                             comments: [],
                             postmetas: []
                         };
-
+                        
                         item['category'] && item['category'].forEach(function(cat){
                             if (cat.$.domain == 'category') {
                                 post.categories.push({
@@ -271,7 +272,9 @@ wp2js.parse = function(opts, callback){
                                 userId: cmt['wp:comment_user_id'][0]
                             });
                         });
-
+                        if (post.type === 'post') {
+                          posts.push(post);
+                        }
                         cb(null, post);
                     }, callback);
                 }
@@ -327,7 +330,7 @@ wp2js.parse = function(opts, callback){
                 ret = propFilter(ret, filterConfig)[0];
             }
         }
-
+        ret['posts'] = posts;
         callback(null, ret);
     });
 };
